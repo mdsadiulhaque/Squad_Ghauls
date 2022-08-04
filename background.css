@@ -1,0 +1,224 @@
+:root {
+    --bg_color: #000000;
+    --point_width: 25px;
+    --point_light: white;
+    --animation: ease-in-out infinite;
+    --duration: 2s;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: var(--bg_color);
+    height: 100vh;
+    position: relative;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+  }
+  
+  .points {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-column-gap: var(--point_width);
+    column-gap: var(--point_width);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotateX(70deg);
+    transform: translate(-50%, -50%) rotateX(70deg);
+  }
+  
+  .points div {
+    height: var(--point_width);
+    border-radius: 50%;
+    position: relative;
+    -webkit-filter: drop-shadow(0 0 var(--point_width) var(--point_light));
+    filter: drop-shadow(0 0 var(--point_width) var(--point_light));
+  }
+  
+  .points div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform-style: perserve-3d;
+    transform-style: perserve-3d;
+    -webkit-transform: translate(0, -50%) rotateX(0deg) rotateY(0deg)
+      rotateZ(0deg);
+    transform: translate(0, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    border-radius: 50%;
+    width: var(--point_width);
+    height: var(--point_width);
+  }
+  
+  .points div:nth-child(1)::before {
+    -webkit-animation: point 2s 0.1s ease-in-out infinite;
+    animation: point 2s 0.1s ease-in-out infinite;
+    width: calc(var(--point_width) * 2);
+    height: calc(var(--point_width) * 2);
+  }
+  
+  .points div:nth-child(2)::before {
+    -webkit-animation: point 2s calc(2 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(2 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(3)::before {
+    -webkit-animation: point 2s calc(3 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(3 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(4)::before {
+    -webkit-animation: point 2s calc(4 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(4 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(5)::before {
+    -webkit-animation: point 2s calc(5 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(5 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(6)::before {
+    -webkit-animation: point 2s calc(6 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(6 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(7)::before {
+    -webkit-animation: point 2s calc(7 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(7 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(8)::before {
+    -webkit-animation: point 2s calc(8 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(8 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(9)::before {
+    -webkit-animation: point 2s calc(9 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(9 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(10)::before {
+    -webkit-animation: point 2s calc(10 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(10 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(11)::before {
+    -webkit-animation: point 2s calc(11 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(11 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(12)::before {
+    -webkit-animation: point 2s calc(12 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(12 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(13)::before {
+    -webkit-animation: point 2s calc(13 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(13 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(14)::before {
+    -webkit-animation: point 2s calc(14 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(14 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(15)::before {
+    -webkit-animation: point 2s calc(15 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(15 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(16)::before {
+    -webkit-animation: point 2s calc(16 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(16 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(17)::before {
+    -webkit-animation: point 2s calc(17 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(17 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(18)::before {
+    -webkit-animation: point 2s calc(18 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(18 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(19)::before {
+    -webkit-animation: point 2s calc(19 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(19 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(20)::before {
+    -webkit-animation: point 2s calc(20 * var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(20 * var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(21)::before {
+    -webkit-animation: point 2s calc(21 var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(21 var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(22)::before {
+    -webkit-animation: point 2s calc(22 var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(22 var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(23)::before {
+    -webkit-animation: point 2s calc(23 var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(23 var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(24)::before {
+    -webkit-animation: point 2s calc(24 var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(24 var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(25)::before {
+    -webkit-animation: point 2s calc(25 var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(25 var(--duration) * 0.05) var(--animation);
+  }
+  
+  .points div:nth-child(26)::before {
+    -webkit-animation: point 2s calc(26 var(--duration) * 0.05) var(--animation);
+    animation: point 2s calc(26 var(--duration) * 0.05) var(--animation);
+  }
+  
+  @-webkit-keyframes point {
+    0% {
+      background-color: var(--point_light);
+    }
+    50% {
+      left: 100%;
+      -webkit-transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
+    }
+    100% {
+      background-color: var(--point_light);
+    }
+  }
+  
+  @keyframes point {
+    0% {
+      background-color: var(--point_light);
+    }
+    50% {
+      left: 100%;
+      -webkit-transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
+    }
+    100% {
+      background-color: var(--point_light);
+    }
+}
